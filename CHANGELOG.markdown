@@ -1,6 +1,11 @@
 # Changelog
 
 
+#### master
+
+- FIXED: Remove extra whitespaces in the response
+
+
 #### Release 0.1.2
 
 - CHANGED: Wrap response between ```

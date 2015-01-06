@@ -24,9 +24,9 @@ module.exports = (robot) ->
         switch res.statusCode
           when 200
             msg.send body
-          when 502
-            msg.send body
           when 400
             msg.send body
+          when 520
+            msg.send body
           else
-            msg.send "Something strange happened!"
+            msg.send "Something strange happened!\n#{body}"

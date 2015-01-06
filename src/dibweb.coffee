@@ -21,12 +21,13 @@ module.exports = (robot) ->
     msg.http("#{digwebHost}/")
       .headers("User-Agent": "hubot-digweb")
       .post(data) (err, res, body) ->
+        text = "```\n#{body}\n```"
         switch res.statusCode
           when 200
-            msg.send body
+            msg.send text
           when 400
-            msg.send body
+            msg.send text
           when 520
-            msg.send body
+            msg.send text
           else
-            msg.send "Something strange happened!\n#{body}"
+            msg.send "Something strange happened!\n#{text}"

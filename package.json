@@ -1,7 +1,7 @@
 {
   "name": "hubot-digweb",
   "description": "A hubot script that interacts with digweb.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Simone Carletti <weppos@weppos.net>",
   "license": "MIT",
 

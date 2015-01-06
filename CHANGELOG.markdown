@@ -1,7 +1,7 @@
 # Changelog
 
 
-#### master
+#### Release 0.1.3
 
 - FIXED: Remove extra whitespaces in the response
 

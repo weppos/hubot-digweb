@@ -17,7 +17,7 @@ digwebHost = process.env.HUBOT_DIGWEB_HOST || "https://digweb.herokuapp.com"
 
 module.exports = (robot) ->
   robot.hear /^dig (.+)$/i, (msg) ->
-    data = escape(msg.match[1])
+    data = msg.match[1]
     msg.http("#{digwebHost}/")
       .headers("User-Agent": "hubot-digweb")
       .post(data) (err, res, body) ->

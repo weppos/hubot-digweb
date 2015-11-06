@@ -10,7 +10,7 @@ describe 'dnsimple', ->
       respond: sinon.spy()
       hear: sinon.spy()
 
-    require('../src/dnsimple')(@robot)
+    require('../src/digweb')(@robot)
 
   it 'registers a hear listener for "dig (.*)"', ->
     expect(@robot.hear).to.have.been.calledWith(/dig (.*)$/i)
